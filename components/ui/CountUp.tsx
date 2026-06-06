@@ -1,0 +1,26 @@
+"use client";
+
+import { useCountUp } from "@/hooks/useCountUp";
+
+interface CountUpProps {
+  end: number;
+  suffix?: string;
+  duration?: number;
+  className?: string;
+}
+
+export default function CountUp({
+  end,
+  suffix = "",
+  duration = 2000,
+  className,
+}: CountUpProps) {
+  const { count, ref } = useCountUp(end, duration);
+
+  return (
+    <span ref={ref} className={className}>
+      {count}
+      {suffix}
+    </span>
+  );
+}
