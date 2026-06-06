@@ -15,15 +15,15 @@ const syne = Syne({
   display: "swap",
 });
 
-const siteUrl = "https://www.streamvault.co.uk";
+const siteUrl = "https://iptvsubscription4k.com";
 
 export const metadata: Metadata = {
   title: {
-    default: "Best IPTV Subscription UK 2026 | 28,000+ Channels | StreamVault",
-    template: "%s | StreamVault IPTV UK",
+    default: "Best IPTV Subscription UK 2026 | 28,000+ Channels | IPTV Subscription 4K",
+    template: "%s | IPTV Subscription 4K",
   },
   description:
-    "StreamVault is the UK's #1 IPTV subscription service. Stream 28,000+ live channels including Sky Sports, BT Sport & 4K content on any device. Free trial available. 99.9% uptime guaranteed.",
+    "IPTV Subscription 4K is the UK's #1 IPTV subscription service. Stream 28,000+ live channels including Sky Sports, BT Sport & 4K content on any device. Free trial available. 99.9% uptime guaranteed.",
   keywords: [
     "best IPTV subscription UK",
     "IPTV UK 2026",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "UK IPTV provider",
     "IPTV Sky Sports UK",
     "IPTV 28000 channels",
-    "StreamVault IPTV",
+    "IPTV Subscription 4K",
   ],
   alternates: {
     canonical: siteUrl,
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     url: siteUrl,
-    siteName: "StreamVault IPTV UK",
-    title: "Best IPTV Subscription UK 2026 | 28,000+ Channels | StreamVault",
+    siteName: "IPTV Subscription 4K",
+    title: "Best IPTV Subscription UK 2026 | 28,000+ Channels | IPTV Subscription 4K",
     description:
       "Stream 28,000+ live channels in HD & 4K. Sky Sports, BT Sport, Movies, Kids & International channels. Works on Firestick, Smart TV, iOS & Android. Start free trial.",
     images: [
@@ -56,16 +56,16 @@ export const metadata: Metadata = {
         url: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "StreamVault — Best IPTV Subscription UK 2026",
+        alt: "IPTV Subscription 4K — Best IPTV Subscription UK 2026",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@StreamVaultUK",
-    creator: "@StreamVaultUK",
-    title: "Best IPTV Subscription UK 2026 | StreamVault",
+    site: "@iptvsub4k",
+    creator: "@iptvsub4k",
+    title: "Best IPTV Subscription UK 2026 | IPTV Subscription 4K",
     description:
       "28,000+ channels. 4K quality. 99.9% uptime. Start your free trial today.",
     images: [`${siteUrl}/og-image.jpg`],
@@ -85,18 +85,15 @@ export const metadata: Metadata = {
   verification: {
     google: "YOUR_GOOGLE_SEARCH_CONSOLE_CODE",
   },
-  applicationName: "StreamVault IPTV",
+  applicationName: "IPTV Subscription 4K",
   category: "Streaming Service",
-  creator: "StreamVault",
-  publisher: "StreamVault UK",
+  creator: "IPTV Subscription 4K",
+  publisher: "IPTV Subscription 4K UK",
   manifest: "/manifest.json",
   icons: {
-    icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-    ],
-    apple: "/apple-touch-icon.png",
-    shortcut: "/favicon.ico",
+    icon: [{ url: "/images/Logo.png", type: "image/png" }],
+    apple: "/images/Logo.png",
+    shortcut: "/images/Logo.png",
   },
   other: {
     "hreflang-en-gb": siteUrl,

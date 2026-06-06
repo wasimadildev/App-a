@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV vs Satellite TV UK 2026 — Which Is Better? | StreamVault",
+  title: "IPTV vs Satellite TV UK 2026 — Which Is Better? | IPTV Subscription 4K",
   description:
     "IPTV vs Sky TV UK comparison for 2026. Compare costs, channels, stream quality, and flexibility. See why thousands of UK homes are switching from satellite to IPTV.",
   openGraph: {
@@ -72,7 +72,7 @@ export default function BlogPost() {
             </h2>
             <p className="mb-4">
               Sky TV offers around 400-500 channels depending on your package.
-              IPTV providers like StreamVault offer <strong className="text-white">28,000+ channels</strong> — that&rsquo;s
+              IPTV providers like IPTV Subscription 4K offer <strong className="text-white">28,000+ channels</strong> — that&rsquo;s
               over 50 times more content than satellite TV. This includes:
             </p>
             <ul className="list-disc pl-5 space-y-2 mb-4">
@@ -177,7 +177,7 @@ export default function BlogPost() {
 
           <div className="border-t border-white/[0.06] pt-8 mt-8 text-center">
             <p className="text-white font-semibold mb-4">
-              Ready to switch from Sky? Try StreamVault free for 24 hours.
+              Ready to switch from Sky? Try IPTV Subscription 4K free for 24 hours.
             </p>
             <a
               href="https://wa.me/447380600578"

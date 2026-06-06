@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best IPTV for Firestick UK 2026 — Complete Setup Guide | StreamVault",
+  title: "Best IPTV for Firestick UK 2026 — Complete Setup Guide | IPTV Subscription 4K",
   description:
     "Find the best IPTV for Firestick UK in 2026. Step-by-step guide to install IPTV on your Amazon Firestick, compare providers, and start streaming 28,000+ channels today.",
   openGraph: {
@@ -186,10 +186,10 @@ export default function BlogPost() {
 
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-white mb-4">
-              Why StreamVault Is the Best IPTV for Firestick UK
+              Why IPTV Subscription 4K Is the Best IPTV for Firestick UK
             </h2>
             <p className="mb-4">
-              StreamVault has been designed specifically for UK viewers. Our
+              IPTV Subscription 4K has been designed specifically for UK viewers. Our
               service includes:
             </p>
             <ul className="list-disc pl-5 space-y-2 mb-4">
@@ -203,7 +203,7 @@ export default function BlogPost() {
               <li>Pay monthly or save 40% with yearly billing</li>
             </ul>
             <p>
-              Thousands of UK customers trust StreamVault for their Firestick
+              Thousands of UK customers trust IPTV Subscription 4K for their Firestick
               IPTV needs. With a 4.9/5 rating from over 10,000 verified
               reviews, we&rsquo;re proud to be recognised as the best IPTV for
               Firestick UK 2026.

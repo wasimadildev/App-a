@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "IPTV Blog UK | StreamVault — Guides & Comparisons",
+  title: "IPTV Blog UK | IPTV Subscription 4K — Guides & Comparisons",
   description:
     "Expert IPTV guides for UK viewers. Learn how to set up IPTV on Firestick, compare IPTV vs satellite TV, and find the best subscription deals for 2026.",
 };

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IPTV Setup Guide UK | How to Install on Firestick & Devices",
   description:
-    "Complete IPTV setup guide for UK users. Learn how to install IPTV on Amazon Firestick, Smart TV, Android, iOS and more with StreamVault. Setup in 2 minutes.",
+    "Complete IPTV setup guide for UK users. Learn how to install IPTV on Amazon Firestick, Smart TV, Android, iOS and more with IPTV Subscription 4K. Setup in 2 minutes.",
 };
 
 const steps = [
@@ -21,13 +21,13 @@ const steps = [
     device: "Firestick",
   },
   {
-    title: "Download StreamVault APK",
+    title: "Download IPTV Subscription 4K APK",
     description:
-      "Open the Downloader app and enter the StreamVault installation URL provided in your welcome email. The APK file will download automatically.",
+      "Open the Downloader app and enter the IPTV Subscription 4K installation URL provided in your welcome email. The APK file will download automatically.",
     device: "Firestick",
   },
   {
-    title: "Install & Launch StreamVault",
+    title: "Install & Launch IPTV Subscription 4K",
     description:
       "Once downloaded, click 'Install' and wait for the installation to complete. Then click 'Open' to launch the app for the first time.",
     device: "Firestick",
@@ -35,7 +35,7 @@ const steps = [
   {
     title: "Log In & Start Streaming",
     description:
-      "Enter the StreamVault login credentials sent to your email. That's it — you now have access to 28,000+ channels in HD and 4K quality.",
+      "Enter the IPTV Subscription 4K login credentials sent to your email. That's it — you now have access to 28,000+ channels in HD and 4K quality.",
     device: "Firestick",
   },
 ];
@@ -46,8 +46,8 @@ const deviceGuides = [
     steps: [
       "Open the Google Play Store on your Android TV",
       "Search for and install an IPTV player app",
-      "Open the app and enter your StreamVault credentials",
-      "Alternatively, sideload the StreamVault APK via USB",
+      "Open the app and enter your IPTV Subscription 4K credentials",
+      "Alternatively, sideload the IPTV Subscription 4K APK via USB",
     ],
   },
   {
@@ -55,7 +55,7 @@ const deviceGuides = [
     steps: [
       "Download an IPTV player app from the App Store",
       "Open the app and select 'Add Playlist'",
-      "Enter the M3U URL from your StreamVault account",
+      "Enter the M3U URL from your IPTV Subscription 4K account",
       "Browse and start watching instantly",
     ],
   },
@@ -63,7 +63,7 @@ const deviceGuides = [
     name: "Android Phone / Tablet",
     steps: [
       "Download an IPTV player app from Google Play",
-      "Open the app and enter your StreamVault login details",
+      "Open the app and enter your IPTV Subscription 4K login details",
       "Use Xtream Codes API or M3U playlist URL",
       "All 28,000+ channels load instantly",
     ],
@@ -73,7 +73,7 @@ const deviceGuides = [
     steps: [
       "Download an IPTV player app like VLC or IPTV Smarters",
       "Open the app and locate the playlist upload section",
-      "Enter your StreamVault M3U URL or Xtream Codes",
+      "Enter your IPTV Subscription 4K M3U URL or Xtream Codes",
       "Start streaming on your computer",
     ],
   },
@@ -97,7 +97,7 @@ export default function SetupGuidePage() {
           </h1>
           <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
             How to install IPTV on Amazon Firestick, Smart TV, and all your
-            devices with StreamVault. Full step-by-step instructions for every
+            devices with IPTV Subscription 4K. Full step-by-step instructions for every
             platform.
           </p>
         </div>

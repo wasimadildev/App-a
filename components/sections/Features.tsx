@@ -22,13 +22,13 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp className="text-center mb-12 sm:mb-16">
           <span className="inline-flex items-center gap-2 border border-[#7C3AED]/30 bg-[#7C3AED]/10 rounded-full px-3 sm:px-4 py-1 text-[10px] sm:text-xs text-[#C084FC] mb-3 sm:mb-4">
-            Key Features of StreamVault IPTV
+            Key Features of IPTV Subscription 4K IPTV
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mt-3 sm:mt-4">
             <span className="text-white">Key Features of</span>
             <br />
             <span className="bg-gradient-to-r from-[#C084FC] via-[#F472B6] to-[#67E8F9] bg-clip-text text-transparent">
-              StreamVault IPTV
+              IPTV Subscription 4K IPTV
             </span>
           </h2>
           <p className="text-[#94A3B8] text-sm sm:text-base md:text-lg mt-3 sm:mt-4 max-w-xl mx-auto px-2 sm:px-0">
@@ -55,27 +55,28 @@ export default function Features() {
             </div>
             <div className="flex-1 grid grid-cols-3 gap-1.5 sm:gap-2">
               {[
-                "SKY", "BBC", "ITV",
-                "CH4", "DAZN", "TNT",
+                { src: "/images/sky logo.jpeg", alt: "Sky" },
+                { src: "/images/bbc logo.png", alt: "BBC" },
+                { src: "/images/itv logo.png", alt: "ITV" },
+                { src: "/images/ch4 logo.jpeg", alt: "Channel 4" },
+                { src: "/images/dazan log.png", alt: "DAZN" },
+                { src: "/images/tnt logo.png", alt: "TNT" },
               ].map((ch, i) => (
                 <motion.div
-                  key={ch}
+                  key={ch.alt}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + i * 0.06 }}
-                  className={`rounded-lg flex items-center justify-center text-[8px] sm:text-[9px] font-bold border border-white/[0.06] min-h-[44px] sm:min-h-0 ${
-                    [
-                      "bg-[#7C3AED]/20 text-[#C084FC]",
-                      "bg-[#EC4899]/20 text-[#F472B6]",
-                      "bg-[#06B6D4]/20 text-[#67E8F9]",
-                      "bg-[#7C3AED]/15 text-[#C084FC]",
-                      "bg-[#EC4899]/15 text-[#F472B6]",
-                      "bg-[#06B6D4]/15 text-[#67E8F9]",
-                    ][i]
-                  }`}
+                  className="rounded-lg flex items-center justify-center bg-white/[0.04] border border-white/[0.06] min-h-[44px] sm:min-h-0 p-2"
                 >
-                  {ch}
+                  <Image
+                    src={ch.src}
+                    alt={ch.alt}
+                    width={80}
+                    height={30}
+                    className="w-auto h-5 sm:h-6 object-contain"
+                  />
                 </motion.div>
               ))}
             </div>
@@ -156,7 +157,7 @@ export default function Features() {
             <div className="flex-1 rounded-xl overflow-hidden border border-white/[0.06]">
               <Image
                 src="/images/smart-tv-living-room.png"
-                alt="StreamVault 4K IPTV on smart TV in luxury living room"
+                alt="IPTV Subscription 4K 4K IPTV on smart TV in luxury living room"
                 width={1672}
                 height={941}
                 className="w-full h-full object-cover"

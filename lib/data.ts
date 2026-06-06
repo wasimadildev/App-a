@@ -66,54 +66,50 @@ export interface PricingPlan {
 
 export const pricingPlans: PricingPlan[] = [
   {
-    name: "Starter",
-    description: "For casual viewers — cheap IPTV subscription UK",
-    monthlyPrice: 9,
-    yearlyPrice: 6,
+    name: "Basic",
+    description: "1 Month Subscription",
+    monthlyPrice: 15,
+    yearlyPrice: 15,
     features: [
-      "1 device connection",
-      "20,000+ channels",
-      "Full HD quality",
-      "7-day EPG guide",
-      "Email support",
+      "15,000+ Live Channels",
+      "UK, US & International Channels",
+      "HD Quality Streaming",
+      "All World Sports Channels",
+      "Prime Video, Netflix, HBO, Apple TV",
     ],
     featured: false,
-    cta: "Start Free Trial",
+    cta: "Buy Now",
   },
   {
-    name: "Pro",
-    description: "For serious streamers — best value UK IPTV service",
-    monthlyPrice: 19,
-    yearlyPrice: 13,
+    name: "Standard",
+    description: "6 Months Subscription",
+    monthlyPrice: 35,
+    yearlyPrice: 35,
     features: [
-      "3 device connections",
-      "28,000+ channels",
-      "4K Ultra HD quality",
-      "Full VOD library",
-      "14-day EPG guide",
-      "Priority support (24/7)",
-      "Anti-freeze technology",
+      "20,000+ Live Channels",
+      "All Sky Sports & BT Sports",
+      "4K Ultra HD Quality",
+      "Netflix, Prime Video and much more",
+      "Movies, Series and much more",
     ],
     featured: true,
-    cta: "Subscribe Now",
+    cta: "Buy Now",
   },
   {
-    name: "Unlimited",
-    description: "For power users — premium 4K IPTV UK",
-    monthlyPrice: 29,
-    yearlyPrice: 20,
+    name: "Premium",
+    description: "1 Year Subscription",
+    monthlyPrice: 49,
+    yearlyPrice: 49,
     features: [
-      "5 device connections",
-      "28,000+ channels",
-      "4K Ultra HD + HDR",
-      "Complete VOD + PPV",
-      "30-day EPG guide",
-      "Dedicated account manager",
-      "Custom parental controls",
-      "VPN-friendly streaming",
+      "40,000+ Live Channels",
+      "50,000+ Movies & Shows VOD",
+      "All Premium Sports Channels",
+      "Netflix, Amazon Prime, Adult, Prime Video, All 4K football and Cricket Channels",
+      "Series daily update",
+      "Anything can be added on demand",
     ],
     featured: false,
-    cta: "Get Unlimited",
+    cta: "Buy Now",
   },
 ];
 
@@ -124,6 +120,7 @@ export interface Testimonial {
   rating: number;
   quote: string;
   gradient: string;
+  avatar: string;
 }
 
 export const testimonials: Testimonial[] = [
@@ -132,6 +129,7 @@ export const testimonials: Testimonial[] = [
     name: "James Thompson",
     location: "Manchester",
     rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=james-thompson-iptv",
     quote:
       "The sports coverage is unbelievable. Every Premier League match in 4K with zero buffering. Best decision I've made this year.",
     gradient: "from-[#7C3AED] to-[#EC4899]",
@@ -141,6 +139,7 @@ export const testimonials: Testimonial[] = [
     name: "Sarah Kennedy",
     location: "London",
     rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=sarah-kennedy-iptv",
     quote:
       "Finally a service the whole family can use. The kids have their channels, I have mine. Perfect picture quality every time.",
     gradient: "from-[#EC4899] to-[#06B6D4]",
@@ -150,6 +149,7 @@ export const testimonials: Testimonial[] = [
     name: "Mohammed Ali",
     location: "Birmingham",
     rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=mohammed-ali-iptv",
     quote:
       "Over 150 countries of content — I can watch news and shows from back home in crystal clear quality. Absolutely incredible value.",
     gradient: "from-[#06B6D4] to-[#7C3AED]",
@@ -159,6 +159,7 @@ export const testimonials: Testimonial[] = [
     name: "Claire Buchanan",
     location: "Edinburgh",
     rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=claire-buchanan-iptv",
     quote:
       "99.9% uptime isn't just marketing. I've had zero issues in 6 months. Rock solid reliability, even during peak hours.",
     gradient: "from-[#7C3AED] to-[#F472B6]",
@@ -168,6 +169,7 @@ export const testimonials: Testimonial[] = [
     name: "Ryan O'Brien",
     location: "Cardiff",
     rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=ryan-obrien-iptv",
     quote:
       "Setup took 2 minutes on my Firestick. The Downloader app method was straightforward and I was watching in no time. So easy.",
     gradient: "from-[#F472B6] to-[#06B6D4]",
@@ -177,8 +179,9 @@ export const testimonials: Testimonial[] = [
     name: "Priya Sharma",
     location: "Leeds",
     rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=priya-sharma-iptv",
     quote:
-      "The 4K quality is stunning. I didn't realise how much detail I was missing until I tried StreamVault on my OLED. Night and day difference.",
+      "The 4K quality is stunning. I didn't realise how much detail I was missing until I tried IPTV Subscription 4K on my OLED. Night and day difference.",
     gradient: "from-[#06B6D4] to-[#7C3AED]",
   },
   {
@@ -186,6 +189,7 @@ export const testimonials: Testimonial[] = [
     name: "David Hughes",
     location: "Bristol",
     rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=david-hughes-iptv",
     quote:
       "£19 a month for everything? I was paying over £80 for Sky and still didn't get this many channels. The value is insane.",
     gradient: "from-[#7C3AED] to-[#EC4899]",
@@ -195,6 +199,7 @@ export const testimonials: Testimonial[] = [
     name: "Emma Wilson",
     location: "Liverpool",
     rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=emma-wilson-iptv",
     quote:
       "Had an issue at 2am and their live chat sorted it in 5 minutes. The 24/7 support is genuinely world-class. Highly recommended.",
     gradient: "from-[#EC4899] to-[#7C3AED]",
@@ -210,27 +215,27 @@ export const faqItems: FAQItem[] = [
   {
     question: "What is the best IPTV subscription in the UK?",
     answer:
-      "StreamVault is rated the UK's number one IPTV subscription service with 28,000+ live channels, 4K Ultra HD quality, and 99.9% uptime. Trusted by over 50,000 UK households, we offer UK channels including Sky Sports, BT Sport, and BBC alongside 150+ international channel packages. Our service works on Amazon Firestick, Smart TVs, and all major devices with instant setup.",
+      "IPTV Subscription 4K is rated the UK's number one IPTV subscription service with 28,000+ live channels, 4K Ultra HD quality, and 99.9% uptime. Trusted by over 50,000 UK households, we offer UK channels including Sky Sports, BT Sport, and BBC alongside 150+ international channel packages. Our service works on Amazon Firestick, Smart TVs, and all major devices with instant setup.",
   },
   {
     question: "Which devices are supported for IPTV UK?",
     answer:
-      "StreamVault works on virtually every modern device: Amazon Firestick & Fire TV, Android TV boxes, Apple TV, Smart TVs (Samsung, LG, Sony), iPhones, iPads, Android phones and tablets, Windows and Mac computers, and MAG boxes. One IPTV Firestick UK subscription covers all your devices with simultaneous connections.",
+      "IPTV Subscription 4K works on virtually every modern device: Amazon Firestick & Fire TV, Android TV boxes, Apple TV, Smart TVs (Samsung, LG, Sony), iPhones, iPads, Android phones and tablets, Windows and Mac computers, and MAG boxes. One IPTV Firestick UK subscription covers all your devices with simultaneous connections.",
   },
   {
     question: "How do I set up IPTV on Amazon Firestick?",
     answer:
-      "Installing our IPTV on Firestick is simple: (1) Go to Settings > My Fire TV > Developer Options and enable 'Apps from Unknown Sources'. (2) Search for and install the 'Downloader' app from the Amazon App Store. (3) Open Downloader, enter your StreamVault installation URL, and download the APK. (4) Click install and launch the app. (5) Log in with your StreamVault credentials and start watching. The whole IPTV Firestick UK setup process takes about 2 minutes.",
+      "Installing our IPTV on Firestick is simple: (1) Go to Settings > My Fire TV > Developer Options and enable 'Apps from Unknown Sources'. (2) Search for and install the 'Downloader' app from the Amazon App Store. (3) Open Downloader, enter your IPTV Subscription 4K installation URL, and download the APK. (4) Click install and launch the app. (5) Log in with your IPTV Subscription 4K credentials and start watching. The whole IPTV Firestick UK setup process takes about 2 minutes.",
   },
   {
     question: "Is there a free IPTV trial in the UK?",
     answer:
-      "Yes! StreamVault offers a free 24-hour trial so you can test our best IPTV subscription UK service before committing. You get full access to all 28,000+ channels, including Sky Sports, movies, and 4K content. No credit card required for the trial period. Simply visit our free trial page to get started.",
+      "Yes! IPTV Subscription 4K offers a free 24-hour trial so you can test our best IPTV subscription UK service before committing. You get full access to all 28,000+ channels, including Sky Sports, movies, and 4K content. No credit card required for the trial period. Simply visit our free trial page to get started.",
   },
   {
     question: "Can I watch Sky Sports without a subscription through IPTV?",
     answer:
-      "Absolutely. StreamVault includes all Sky Sports channels, BT Sport, TNT Sports, and Premier Sports in Full HD and 4K quality as part of every subscription plan. Watch Premier League, Champions League, Formula 1, UFC, and more without paying for expensive Sky contracts. Our IPTV subscription with Sky Sports UK starts from just £9/month.",
+      "Absolutely. IPTV Subscription 4K includes all Sky Sports channels, BT Sport, TNT Sports, and Premier Sports in Full HD and 4K quality as part of every subscription plan. Watch Premier League, Champions League, Formula 1, UFC, and more without paying for expensive Sky contracts. Our IPTV subscription with Sky Sports UK starts from just £9/month.",
   },
   {
     question: "What is the EPG guide for IPTV channels?",
@@ -250,7 +255,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "What if I experience buffering on IPTV?",
     answer:
-      "Buffering is rare on StreamVault thanks to our 99.9% uptime and CDN-optimised servers across the UK and Europe. If you do experience issues, try: (1) Checking your internet speed (25Mbps+ recommended for 4K IPTV UK). (2) Using a wired Ethernet connection instead of WiFi. (3) Selecting a different server in your account settings. Our 24/7 UK-based support team can also help optimise your setup.",
+      "Buffering is rare on IPTV Subscription 4K thanks to our 99.9% uptime and CDN-optimised servers across the UK and Europe. If you do experience issues, try: (1) Checking your internet speed (25Mbps+ recommended for 4K IPTV UK). (2) Using a wired Ethernet connection instead of WiFi. (3) Selecting a different server in your account settings. Our 24/7 UK-based support team can also help optimise your setup.",
   },
   {
     question: "Can I cancel or upgrade my IPTV subscription anytime?",

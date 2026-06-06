@@ -50,7 +50,7 @@ export default function Sports() {
           className="text-base sm:text-lg text-[#94A3B8] mt-4 max-w-2xl mx-auto"
         >
           Watch Premier League, Champions League, UEFA, La Liga, Serie A, and
-          more in stunning 4K Ultra HD. Never miss a goal with StreamVault&apos;s
+          more in stunning 4K Ultra HD. Never miss a goal with IPTV Subscription 4K&apos;s
           premium sports coverage.
         </motion.p>
 
@@ -59,24 +59,23 @@ export default function Sports() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-wrap items-center justify-center gap-6 mt-8 text-sm text-[#94A3B8]"
+          className="flex flex-wrap items-center justify-center gap-6 mt-8"
         >
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED]" />
-            Sky Sports
-          </span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#EC4899]" />
-            TNT Sports
-          </span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#06B6D4]" />
-            Premier League
-          </span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#C084FC]" />
-            DAZN
-          </span>
+          {[
+            { src: "/images/sky logo.jpeg", alt: "Sky Sports" },
+            { src: "/images/tnt logo.png", alt: "TNT Sports" },
+            { src: "/images/dazan log.png", alt: "DAZN" },
+          ].map((ch) => (
+            <div key={ch.alt} className="flex items-center justify-center">
+              <Image
+                src={ch.src}
+                alt={ch.alt}
+                width={100}
+                height={36}
+                className="w-auto h-6 sm:h-7 object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+          ))}
         </motion.div>
       </div>
     </section>

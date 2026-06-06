@@ -22,7 +22,7 @@ export default function Testimonials() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-black text-white">
-            StreamVault Customer Reviews
+            IPTV Subscription 4K Customer Reviews
           </h2>
           <div className="flex items-center justify-center gap-2 mt-3">
             <span className="text-[#F59E0B] text-lg">★★★★★</span>
@@ -49,11 +49,13 @@ export default function Testimonials() {
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="flex items-center gap-3">
-                <div
-                  className={`w-9 h-9 rounded-full bg-gradient-to-br ${t.gradient} flex items-center justify-center text-[10px] font-bold text-white`}
-                >
-                  {t.initials}
-                </div>
+                <Image
+                  src={t.avatar}
+                  alt={t.name}
+                  width={36}
+                  height={36}
+                  className="w-9 h-9 rounded-full object-cover"
+                />
                 <div>
                   <p className="text-sm font-medium text-white">{t.name}</p>
                   <p className="text-xs text-[#475569]">{t.location}</p>
@@ -80,11 +82,13 @@ export default function Testimonials() {
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="flex items-center gap-3">
-                <div
-                  className={`w-9 h-9 rounded-full bg-gradient-to-br ${t.gradient} flex items-center justify-center text-[10px] font-bold text-white`}
-                >
-                  {t.initials}
-                </div>
+                <Image
+                  src={t.avatar}
+                  alt={t.name}
+                  width={36}
+                  height={36}
+                  className="w-9 h-9 rounded-full object-cover"
+                />
                 <div>
                   <p className="text-sm font-medium text-white">{t.name}</p>
                   <p className="text-xs text-[#475569]">{t.location}</p>

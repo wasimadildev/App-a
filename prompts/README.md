@@ -1,4 +1,4 @@
-# StreamVault — AI Image Prompts
+# IPTV Subscription 4K — AI Image Prompts
 
 15 professional-grade AI image prompts for a premium dark-themed IPTV streaming service.
 

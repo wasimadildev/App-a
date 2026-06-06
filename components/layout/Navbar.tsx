@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowRight, Zap } from "lucide-react";
+import Image from "next/image";
+import { Menu, X, ArrowRight } from "lucide-react";
 
 const navLinks = [
   { href: "#features", label: "Features" },
@@ -39,13 +40,14 @@ export default function Navbar() {
           ${scrolled ? "bg-white/[0.06] shadow-lg shadow-[#7C3AED]/5" : ""}
         `}
       >
-        <a href="#" className="flex items-center gap-2 shrink-0">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#7C3AED] to-[#EC4899] flex items-center justify-center">
-            <Zap className="w-4 h-4 text-white" />
-          </div>
-          <span className="bg-gradient-to-r from-[#C084FC] to-[#F472B6] bg-clip-text text-transparent font-bold text-base">
-            StreamVault
-          </span>
+        <a href="#" className="flex items-center shrink-0">
+          <Image
+            src="/images/Logo.png"
+            alt="IPTV Subscription 4K"
+            width={36}
+            height={36}
+            className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -62,12 +64,6 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a
-            href="#"
-            className="text-sm text-[#94A3B8] hover:text-white transition-colors px-3 py-1.5 rounded-lg hover:bg-white/5 font-medium"
-          >
-            Sign In
-          </a>
           <a
             href="https://wa.me/447380600578"
             target="_blank"

@@ -3,13 +3,13 @@ import Link from "next/link";
 import Pricing from "@/components/sections/Pricing";
 
 export const metadata: Metadata = {
-  title: "IPTV Plans & Pricing UK 2026 | Starting from £9/month",
+  title: "IPTV Plans & Pricing UK 2026 | Starting from £15",
   description:
-    "Compare cheap IPTV subscription UK plans from StreamVault. Starter £9/mo, Pro £19/mo (4K), Unlimited £29/mo. Save 40% with yearly. Free trial included.",
+    "Choose from IPTV Subscription 4K plans: Basic £15/mo, Standard £35/6mo, Premium £49/yr. 40,000+ channels, 4K quality, VOD library.",
   openGraph: {
-    title: "IPTV Plans & Pricing UK 2026 | StreamVault",
+    title: "IPTV Plans & Pricing UK 2026 | IPTV Subscription 4K",
     description:
-      "Compare the best IPTV subscription UK plans. 28,000+ channels, 4K quality, 99.9% uptime. From just £9/month.",
+      "Compare the best IPTV subscription UK plans. 40,000+ channels, 4K quality, 99.9% uptime. From just £15.",
   },
 };
 

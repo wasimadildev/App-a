@@ -20,7 +20,7 @@ export default function CTA() {
             </span>
           </h2>
           <p className="text-lg text-[#94A3B8] mt-6 max-w-xl mx-auto">
-            Join 50,000+ UK households already watching with StreamVault —
+            Join 50,000+ UK households already watching with IPTV Subscription 4K —
             the best IPTV subscription UK has to offer. No credit card
             required for your free trial.
           </p>

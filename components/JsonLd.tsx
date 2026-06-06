@@ -1,11 +1,11 @@
-const siteUrl = "https://www.streamvault.co.uk";
+const siteUrl = "https://iptvsubscription4k.com";
 
 const organization = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "StreamVault IPTV UK",
+  name: "IPTV Subscription 4K",
   url: siteUrl,
-  logo: `${siteUrl}/logo.png`,
+  logo: `${siteUrl}/images/Logo.png`,
   description:
     "UK's leading IPTV subscription service with 28,000+ channels in HD and 4K quality.",
   foundingDate: "2022",
@@ -18,16 +18,16 @@ const organization = {
     hoursAvailable: "Mo-Su 00:00-24:00",
   },
   sameAs: [
-    "https://www.facebook.com/StreamVaultUK",
-    "https://twitter.com/StreamVaultUK",
-    "https://www.instagram.com/StreamVaultUK",
+    "https://www.facebook.com/iptvsubscription4k",
+    "https://twitter.com/iptvsubscription4k",
+    "https://www.instagram.com/iptvsubscription4k",
   ],
 };
 
 const website = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "StreamVault IPTV",
+  name: "IPTV Subscription 4K",
   url: siteUrl,
   potentialAction: {
     "@type": "SearchAction",
@@ -42,20 +42,20 @@ const website = {
 const product = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "StreamVault IPTV Pro Subscription",
+  name: "IPTV Subscription 4K Pro Subscription",
   description:
     "Access 28,000+ live TV channels including UK, US, Sports, Movies and International content in HD and 4K Ultra HD quality.",
   brand: {
     "@type": "Brand",
-    name: "StreamVault",
+    name: "IPTV Subscription 4K",
   },
   image: `${siteUrl}/og-image.jpg`,
   url: siteUrl,
   offers: [
     {
       "@type": "Offer",
-      name: "Starter Plan",
-      price: "9.00",
+      name: "Basic Plan",
+      price: "15.00",
       priceCurrency: "GBP",
       priceValidUntil: "2027-12-31",
       availability: "https://schema.org/InStock",
@@ -63,8 +63,8 @@ const product = {
     },
     {
       "@type": "Offer",
-      name: "Pro Plan",
-      price: "19.00",
+      name: "Standard Plan",
+      price: "35.00",
       priceCurrency: "GBP",
       priceValidUntil: "2027-12-31",
       availability: "https://schema.org/InStock",
@@ -72,8 +72,8 @@ const product = {
     },
     {
       "@type": "Offer",
-      name: "Unlimited Plan",
-      price: "29.00",
+      name: "Premium Plan",
+      price: "49.00",
       priceCurrency: "GBP",
       priceValidUntil: "2027-12-31",
       availability: "https://schema.org/InStock",
@@ -98,7 +98,7 @@ const faqPage = {
       name: "What is the best IPTV subscription in the UK?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "StreamVault is rated the UK's #1 IPTV subscription service with 28,000+ live channels, 4K Ultra HD quality, and 99.9% uptime. Trusted by over 50,000 UK households.",
+        text: "IPTV Subscription 4K is rated the UK's #1 IPTV subscription service with 28,000+ live channels, 4K Ultra HD quality, and 99.9% uptime. Trusted by over 50,000 UK households.",
       },
     },
     {
@@ -106,7 +106,7 @@ const faqPage = {
       name: "How do I set up IPTV on Amazon Firestick?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "1. Install the Downloader app from the Amazon App Store. 2. Enable Apps from Unknown Sources in Firestick settings. 3. Open Downloader and enter your StreamVault APK URL. 4. Install and open the app. 5. Enter your login credentials. Setup takes under 2 minutes.",
+        text: "1. Install the Downloader app from the Amazon App Store. 2. Enable Apps from Unknown Sources in Firestick settings. 3. Open Downloader and enter your IPTV Subscription 4K APK URL. 4. Install and open the app. 5. Enter your login credentials. Setup takes under 2 minutes.",
       },
     },
     {
@@ -114,7 +114,7 @@ const faqPage = {
       name: "Is there a free IPTV trial in the UK?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, StreamVault offers a free 24-hour trial with full access to all 28,000+ channels in HD and 4K quality. No credit card required to start your free trial.",
+        text: "Yes, IPTV Subscription 4K offers a free 24-hour trial with full access to all 28,000+ channels in HD and 4K quality. No credit card required to start your free trial.",
       },
     },
     {
@@ -122,23 +122,23 @@ const faqPage = {
       name: "How much does IPTV cost in the UK?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "StreamVault IPTV plans start from £9/month for the Starter plan, £19/month for Pro with 4K access, and £29/month for the Unlimited plan with 5 simultaneous connections. Yearly plans save up to 40%.",
+        text: "IPTV Subscription 4K plans start from £15/month for the Basic plan, £35/month for Standard with 4K access, and £49/month for the Premium plan.",
       },
     },
     {
       "@type": "Question",
-      name: "Does StreamVault IPTV include Sky Sports?",
+      name: "Does IPTV Subscription 4K include Sky Sports?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, StreamVault includes all Sky Sports channels, BT Sport, TNT Sports, and Premier Sports in Full HD and 4K quality as part of all subscription plans.",
+        text: "Yes, IPTV Subscription 4K includes all Sky Sports channels, BT Sport, TNT Sports, and Premier Sports in Full HD and 4K quality as part of all subscription plans.",
       },
     },
     {
       "@type": "Question",
-      name: "Which devices does StreamVault IPTV support?",
+      name: "Which devices does IPTV Subscription 4K support?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "StreamVault works on Amazon Firestick, Android TV, Smart TV (Samsung, LG), Apple TV, iPhone, iPad, Android phones, MAG boxes, Windows PC, and Mac. One subscription works across all your devices.",
+        text: "IPTV Subscription 4K works on Amazon Firestick, Android TV, Smart TV (Samsung, LG), Apple TV, iPhone, iPad, Android phones, MAG boxes, Windows PC, and Mac. One subscription works across all your devices.",
       },
     },
   ],
@@ -147,7 +147,7 @@ const faqPage = {
 const localBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "StreamVault IPTV UK",
+  name: "IPTV Subscription 4K UK",
   image: `${siteUrl}/og-image.jpg`,
   url: siteUrl,
   telephone: "+447380600578",

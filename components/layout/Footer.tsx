@@ -1,6 +1,7 @@
 "use client";
 
-import { Zap, Globe, Camera, MessageCircle, Send } from "lucide-react";
+import Image from "next/image";
+import { Globe, Camera, MessageCircle, Send } from "lucide-react";
 
 const footerColumns = [
   {
@@ -35,10 +36,10 @@ const footerColumns = [
         <p className="text-sm text-[#94A3B8] mt-1">
           Email:{" "}
           <a
-            href="mailto:support@streamvault.co.uk"
+            href="mailto:support@iptvsubscription4k.com"
             className="text-white hover:text-[#C084FC] transition-colors"
           >
-            support@streamvault.co.uk
+            support@iptvsubscription4k.com
           </a>
         </p>
         <p className="text-xs text-[#475569] mt-2">24/7 Support Available</p>
@@ -60,13 +61,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <a href="#" className="flex items-center gap-2 mb-3">
-              <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#7C3AED] to-[#EC4899] flex items-center justify-center">
-                <Zap className="w-4 h-4 text-white" />
-              </div>
-              <span className="bg-gradient-to-r from-[#C084FC] to-[#F472B6] bg-clip-text text-transparent font-bold text-base">
-                StreamVault
-              </span>
+            <a href="#" className="flex items-center mb-3">
+              <Image
+                src="/images/Logo.png"
+                alt="IPTV Subscription 4K"
+                width={120}
+                height={36}
+                className="h-8 sm:h-9 w-auto object-contain"
+              />
             </a>
             <p className="text-sm text-[#94A3B8] mb-5">
               Premium IPTV for the modern viewer.
@@ -115,7 +117,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-[#475569]">
-            &copy; 2026 StreamVault. All rights reserved.
+            &copy; 2026 IPTV Subscription 4K. All rights reserved.
           </p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms", "Cookie Policy"].map((item) => (

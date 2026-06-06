@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 0,
       },
     ],
-    sitemap: "https://www.streamvault.co.uk/sitemap.xml",
-    host: "https://www.streamvault.co.uk",
+    sitemap: "https://iptvsubscription4k.com/sitemap.xml",
+    host: "https://iptvsubscription4k.com",
   };
 }

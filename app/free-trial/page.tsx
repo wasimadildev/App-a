@@ -5,9 +5,9 @@ import CTA from "@/components/sections/CTA";
 export const metadata: Metadata = {
   title: "Free IPTV Trial UK | 24-Hour Trial — No Credit Card Required",
   description:
-    "Start your free IPTV trial UK with StreamVault. Enjoy 28,000+ live channels including Sky Sports and 4K content for 24 hours. No credit card needed. Setup in 2 minutes.",
+    "Start your free IPTV trial UK with IPTV Subscription 4K. Enjoy 28,000+ live channels including Sky Sports and 4K content for 24 hours. No credit card needed. Setup in 2 minutes.",
   openGraph: {
-    title: "Free IPTV Trial UK | StreamVault",
+    title: "Free IPTV Trial UK | IPTV Subscription 4K",
     description:
       "Try the best IPTV subscription UK free for 24 hours. 28,000+ channels, 4K quality, zero commitment.",
   },
@@ -32,7 +32,7 @@ export default function FreeTrialPage() {
           </h1>
           <p className="text-lg text-[#94A3B8] mb-8 leading-relaxed">
             Want to try the best IPTV subscription UK has to offer before you
-            buy? StreamVault gives you a full 24-hour free trial with{" "}
+            buy? IPTV Subscription 4K gives you a full 24-hour free trial with{" "}
             <strong className="text-white">unlimited access</strong> to all
             28,000+ channels, including:
           </p>

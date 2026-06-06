@@ -96,7 +96,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-sm sm:text-base md:text-xl text-[#94A3B8] max-w-3xl mx-auto leading-relaxed mt-4 sm:mt-6 px-0 sm:px-2"
         >
-          StreamVault is the UK&apos;s best IPTV subscription service, delivering
+          IPTV Subscription 4K is the UK&apos;s best IPTV subscription service, delivering
           28,000+ live channels in Full HD and 4K Ultra HD quality. Stream Sky
           Sports, BT Sport, Premier League, movies, and 150+ international
           channels on your Firestick, Smart TV, or any device. 99.9% uptime.
@@ -138,21 +138,21 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-8 sm:mt-10"
         >
           <div className="flex">
-            {["JD", "SK", "MA", "CB", "RO"].map((initials, i) => (
-              <div
-                key={initials}
-                className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-[#080810] flex items-center justify-center text-[8px] sm:text-[9px] font-bold text-white -ml-1.5 first:ml-0 ${
-                  [
-                    "bg-gradient-to-br from-[#7C3AED] to-[#EC4899]",
-                    "bg-gradient-to-br from-[#EC4899] to-[#06B6D4]",
-                    "bg-gradient-to-br from-[#06B6D4] to-[#7C3AED]",
-                    "bg-gradient-to-br from-[#7C3AED] to-[#F472B6]",
-                    "bg-gradient-to-br from-[#F472B6] to-[#06B6D4]",
-                  ][i]
-                }`}
-              >
-                {initials}
-              </div>
+            {[
+              "james-thompson-iptv",
+              "sarah-kennedy-iptv",
+              "mohammed-ali-iptv",
+              "claire-buchanan-iptv",
+              "ryan-obrien-iptv",
+            ].map((seed, i) => (
+              <Image
+                key={seed}
+                src={`https://i.pravatar.cc/150?u=${seed}`}
+                alt=""
+                width={32}
+                height={32}
+                className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-[#080810] object-cover -ml-1.5 first:ml-0"
+              />
             ))}
           </div>
           <div className="text-center sm:text-left">
@@ -177,7 +177,7 @@ export default function Hero() {
         >
           <Image
             src="/images/banner.png"
-            alt="StreamVault IPTV - 28000+ live channels on UK streaming service"
+            alt="IPTV Subscription 4K IPTV - 28000+ live channels on UK streaming service"
             width={1729}
             height={910}
             className="w-full h-auto"

@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.streamvault.co.uk";
+  const baseUrl = "https://iptvsubscription4k.com";
 
   return [
     {

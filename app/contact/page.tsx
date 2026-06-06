@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MessageCircle, Mail, Phone, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact StreamVault IPTV UK | 24/7 Customer Support",
+  title: "Contact IPTV Subscription 4K IPTV UK | 24/7 Customer Support",
   description:
     "Contact the UK's best IPTV provider. WhatsApp 24/7 support, email, and live chat. Get help with setup, billing, or any questions about our IPTV subscription UK service.",
 };
@@ -52,7 +52,7 @@ export default function ContactPage() {
 
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
-            Contact StreamVault IPTV UK
+            Contact IPTV Subscription 4K IPTV UK
           </h1>
           <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
             Need help with your IPTV subscription UK? Our UK-based support team
