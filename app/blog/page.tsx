@@ -1,39 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { blogPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "IPTV Blog UK | IPTV Subscription 4K — Guides & Comparisons",
   description:
     "Expert IPTV guides for UK viewers. Learn how to set up IPTV on Firestick, compare IPTV vs satellite TV, and find the best subscription deals for 2026.",
 };
-
-const posts = [
-  {
-    slug: "best-iptv-firestick-uk-2026",
-    title: "Best IPTV for Firestick UK 2026 — Complete Setup Guide",
-    description:
-      "Step-by-step guide to installing and using the best IPTV for Firestick UK. Compare providers, setup methods, and get the most from your Firestick.",
-    date: "15 May 2026",
-    readTime: "8 min read",
-  },
-  {
-    slug: "iptv-vs-satellite-tv-uk",
-    title: "IPTV vs Satellite TV in the UK — Which is Better in 2026?",
-    description:
-      "IPTV vs Sky TV UK — we compare costs, channel selection, quality, and flexibility. See why thousands are switching to IPTV in 2026.",
-    date: "10 May 2026",
-    readTime: "6 min read",
-  },
-  {
-    slug: "watch-sky-sports-without-subscription",
-    title: "How to Watch Sky Sports Without a Subscription in the UK",
-    description:
-      "Legal ways to watch Sky Sports cheap UK. IPTV alternatives that include all Premier League, F1, and UFC coverage without expensive contracts.",
-    date: "5 May 2026",
-    readTime: "7 min read",
-  },
-];
 
 export default function BlogPage() {
   return (
@@ -59,7 +33,7 @@ export default function BlogPage() {
         </div>
 
         <div className="space-y-6">
-          {posts.map((post) => (
+          {blogPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
@@ -67,6 +41,9 @@ export default function BlogPage() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
+                  <span className="inline-block text-[10px] uppercase tracking-wider text-[#7C3AED] font-semibold mb-2">
+                    {post.category}
+                  </span>
                   <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#C084FC] transition-colors">
                     {post.title}
                   </h2>
@@ -84,6 +61,12 @@ export default function BlogPage() {
             </Link>
           ))}
         </div>
+
+        {blogPosts.length === 0 && (
+          <div className="text-center py-20">
+            <p className="text-[#94A3B8]">No blog posts yet. Check back soon!</p>
+          </div>
+        )}
       </div>
     </main>
   );
