@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
-  Tv, Zap, Monitor, Smartphone, Tablet,
-  Film, Play,
+  Tv, Zap, Monitor,
 } from "lucide-react";
 import FadeUp from "@/components/ui/FadeUp";
 import StaggerChildren from "@/components/ui/StaggerChildren";
@@ -153,34 +153,14 @@ export default function Features() {
                 ))}
               </div>
             </div>
-            <div className="flex-1 bg-[#080810] rounded-xl border border-white/[0.06] p-4 flex flex-col justify-center">
-              <div className="relative">
-                <div
-                  className="aspect-video bg-[#0E0E1A] rounded-lg flex items-center justify-center border border-white/[0.04]"
-                  role="img"
-                  aria-label="StreamVault 4K IPTV UK streaming demo player"
-                >
-                  <div className="w-12 h-12 rounded-full bg-white/[0.1] flex items-center justify-center hover:bg-white/[0.15] transition-all cursor-pointer">
-                    <Play className="w-5 h-5 text-white ml-0.5" />
-                  </div>
-                  <span className="absolute top-2 right-2 bg-gradient-to-r from-[#7C3AED] to-[#EC4899] text-white text-[8px] font-bold px-1.5 py-0.5 rounded">
-                    4K
-                  </span>
-                </div>
-                <div className="mt-2 w-full h-1 bg-white/[0.06] rounded-full overflow-hidden">
-                  <motion.div
-                    initial={{ width: "0%" }}
-                    whileInView={{ width: "62%" }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    className="h-full rounded-full bg-gradient-to-r from-[#7C3AED] to-[#06B6D4]"
-                  />
-                </div>
-                <div className="flex justify-between mt-1">
-                  <span className="text-[8px] text-[#475569]">0:00</span>
-                  <span className="text-[8px] text-[#475569]">1:24:15</span>
-                </div>
-              </div>
+            <div className="flex-1 rounded-xl overflow-hidden border border-white/[0.06]">
+              <Image
+                src="/images/smart-tv-living-room.png"
+                alt="StreamVault 4K IPTV on smart TV in luxury living room"
+                width={1672}
+                height={941}
+                className="w-full h-full object-cover"
+              />
             </div>
           </GlassCard>
 
@@ -196,31 +176,14 @@ export default function Features() {
                 you own.
               </p>
             </div>
-            <div className="flex items-center gap-4 sm:gap-6 flex-wrap justify-center">
-              {[
-                { icon: Tv, label: "Smart TV" },
-                { icon: Smartphone, label: "Phone" },
-                { icon: Monitor, label: "PC" },
-                { icon: Tablet, label: "Tablet" },
-                { icon: Film, label: "Firestick" },
-              ].map((item, i) => {
-                const Icon = item.icon;
-                return (
-                  <motion.div
-                    key={item.label}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.3 + i * 0.08 }}
-                    className="flex flex-col items-center gap-1.5"
-                  >
-                    <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.06] flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-[#C084FC]" />
-                    </div>
-                    <span className="text-[10px] text-[#94A3B8]">{item.label}</span>
-                  </motion.div>
-                );
-              })}
+            <div className="w-40 sm:w-56 shrink-0 rounded-xl overflow-hidden border border-white/[0.06]">
+              <Image
+                src="/images/firestick-product.png"
+                alt="Amazon Firestick streaming device"
+                width={1448}
+                height={1086}
+                className="w-full h-auto"
+              />
             </div>
           </GlassCard>
         </StaggerChildren>

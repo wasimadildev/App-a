@@ -11,6 +11,9 @@ const Features = dynamic(() => import("@/components/sections/Features"), {
 const Stats = dynamic(() => import("@/components/sections/Stats"), {
   ssr: false,
 });
+const Sports = dynamic(() => import("@/components/sections/Sports"), {
+  ssr: false,
+});
 const Pricing = dynamic(() => import("@/components/sections/Pricing"), {
   ssr: false,
 });
@@ -34,6 +37,9 @@ export default function DynamicSections() {
       </section>
       <section id="stats">
         <Stats />
+      </section>
+      <section id="sports">
+        <Sports />
       </section>
       <section id="pricing">
         <Pricing />
