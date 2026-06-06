@@ -129,7 +129,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     initials: "JT",
-    name: "James T.",
+    name: "James Thompson",
     location: "Manchester",
     rating: 5,
     quote:
@@ -138,7 +138,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     initials: "SK",
-    name: "Sarah K.",
+    name: "Sarah Kennedy",
     location: "London",
     rating: 5,
     quote:
@@ -147,7 +147,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     initials: "MA",
-    name: "Mohammed A.",
+    name: "Mohammed Ali",
     location: "Birmingham",
     rating: 5,
     quote:
@@ -156,7 +156,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     initials: "CB",
-    name: "Claire B.",
+    name: "Claire Buchanan",
     location: "Edinburgh",
     rating: 5,
     quote:
@@ -165,7 +165,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     initials: "RO",
-    name: "Ryan O.",
+    name: "Ryan O'Brien",
     location: "Cardiff",
     rating: 5,
     quote:
@@ -174,7 +174,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     initials: "PS",
-    name: "Priya S.",
+    name: "Priya Sharma",
     location: "Leeds",
     rating: 5,
     quote:
@@ -183,7 +183,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     initials: "DH",
-    name: "David H.",
+    name: "David Hughes",
     location: "Bristol",
     rating: 5,
     quote:
@@ -192,7 +192,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     initials: "EW",
-    name: "Emma W.",
+    name: "Emma Wilson",
     location: "Liverpool",
     rating: 5,
     quote:

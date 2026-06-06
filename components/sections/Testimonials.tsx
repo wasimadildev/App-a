@@ -1,12 +1,25 @@
 "use client";
 
+import Image from "next/image";
 import { testimonials } from "@/lib/data";
 import FadeUp from "@/components/ui/FadeUp";
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-[#0E0E1A] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-24 bg-[#0E0E1A] overflow-hidden">
+      {/* Friends watching sports background */}
+      <div className="absolute inset-0 pointer-events-none opacity-15 sm:opacity-20">
+        <Image
+          src="/images/friends-wating-sports.png"
+          alt=""
+          fill
+          className="object-cover"
+          aria-hidden
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0E0E1A] via-transparent to-[#0E0E1A] pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-black text-white">
             StreamVault Customer Reviews
@@ -21,7 +34,7 @@ export default function Testimonials() {
       </div>
 
       {/* Row 1 - scroll left */}
-      <div className="flex overflow-hidden mb-6">
+      <div className="relative z-10 flex overflow-hidden mb-6">
         <div className="flex gap-4 animate-marquee-left">
           {[...testimonials, ...testimonials].map((t, i) => (
             <div
@@ -52,7 +65,7 @@ export default function Testimonials() {
       </div>
 
       {/* Row 2 - scroll right */}
-      <div className="flex overflow-hidden">
+      <div className="relative z-10 flex overflow-hidden">
         <div className="flex gap-4 animate-marquee-right">
           {[...testimonials, ...testimonials].reverse().map((t, i) => (
             <div
