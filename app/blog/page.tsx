@@ -4,9 +4,12 @@ import { ArrowUpRight } from "lucide-react";
 import { blogPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "IPTV Blog UK | IPTV Subscription 4K — Guides & Comparisons",
+  title: "IPTV Blog UK — Guides & Comparisons",
   description:
     "Expert IPTV guides for UK viewers. Learn how to set up IPTV on Firestick, compare IPTV vs satellite TV, and find the best subscription deals for 2026.",
+  alternates: {
+    canonical: "https://iptvsubscription4k.com/blog",
+  },
 };
 
 export default function BlogPage() {

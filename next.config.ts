@@ -36,6 +36,30 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/uk/:path*",
+        destination: "/:path*",
+        permanent: true,
+      },
+      {
+        source: "/nl",
+        destination: "/nl/",
+        permanent: true,
+      },
+      {
+        source: "/us",
+        destination: "/us/",
+        permanent: true,
+      },
+      {
+        source: "/eu",
+        destination: "/eu/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

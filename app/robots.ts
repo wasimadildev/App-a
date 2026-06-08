@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { siteUrl } from "@/lib/locales";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -14,7 +15,7 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 0,
       },
     ],
-    sitemap: "https://iptvsubscription4k.com/sitemap.xml",
-    host: "https://iptvsubscription4k.com",
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }

@@ -3,13 +3,17 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { Menu, X, ArrowRight } from "lucide-react";
 
 const navLinks = [
-  { href: "#features", label: "Features" },
-  { href: "#channels", label: "Channels" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "/#features", label: "Features" },
+  { href: "/channels", label: "Channels" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/setup-guide", label: "Setup Guide" },
+  { href: "/free-trial", label: "Free Trial" },
   { href: "/blog", label: "Blog" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -40,7 +44,7 @@ export default function Navbar() {
           ${scrolled ? "bg-white/[0.06] shadow-lg shadow-[#7C3AED]/5" : ""}
         `}
       >
-        <a href="#" className="flex items-center shrink-0">
+        <Link href="/" className="flex items-center shrink-0">
           <Image
             src="/images/Logo.png"
             alt="IPTV Subscription 4K"
@@ -48,18 +52,18 @@ export default function Navbar() {
             height={36}
             className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
           />
-        </a>
+        </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="group relative text-sm text-[#94A3B8] hover:text-white transition-colors font-medium"
             >
               {link.label}
               <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-[#7C3AED] opacity-0 group-hover:opacity-100 transition-opacity" />
-            </a>
+            </Link>
           ))}
         </div>
 

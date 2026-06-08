@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Watch Premier League Live Stream UK 2026 — Without Sky or BT Sport | IPTV Subscription 4K",
+  title: "How to Watch Premier League Live Stream UK 2026 — Without Sky or BT Sport",
   description:
     "Watch every Premier League match live in the UK without an expensive Sky or BT Sport subscription. Complete IPTV streaming guide for the 2026/27 season in 4K.",
+  alternates: {
+    canonical: "https://iptvsubscription4k.com/blog/watch-premier-league-live-stream-uk-2026",
+  },
   openGraph: {
     title: "How to Watch Premier League Live Stream UK 2026 — Without Sky or BT Sport",
     description:
@@ -15,6 +19,7 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <article className="pt-24">
+      <BlogJsonLd title={metadata.title} description={metadata.description} datePublished="2026-05-28" slug="watch-premier-league-live-stream-uk-2026" />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="text-sm text-[#475569] mb-8">
           <Link href="/" className="hover:text-white transition-colors">

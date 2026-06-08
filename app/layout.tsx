@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Syne } from "next/font/google";
 import "./globals.css";
+import { locales, localeConfig, siteUrl } from "@/lib/locales";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,11 +16,10 @@ const syne = Syne({
   display: "swap",
 });
 
-const siteUrl = "https://iptvsubscription4k.com";
-
 export const metadata: Metadata = {
   title: {
-    default: "Best IPTV Subscription UK 2026 | 28,000+ Channels | IPTV Subscription 4K",
+    default:
+      "Best IPTV Subscription UK 2026 | 28,000+ Channels | IPTV Subscription 4K",
     template: "%s | IPTV Subscription 4K",
   },
   description:
@@ -38,17 +38,17 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: siteUrl,
-    languages: {
-      "en-gb": siteUrl,
-      "x-default": siteUrl,
-    },
+    languages: Object.fromEntries(
+      locales.map((l) => [localeConfig[l].hrefLang, `${siteUrl}${localeConfig[l].path}`])
+    ),
   },
   openGraph: {
     type: "website",
     locale: "en_GB",
     url: siteUrl,
     siteName: "IPTV Subscription 4K",
-    title: "Best IPTV Subscription UK 2026 | 28,000+ Channels | IPTV Subscription 4K",
+    title:
+      "Best IPTV Subscription UK 2026 | 28,000+ Channels | IPTV Subscription 4K",
     description:
       "Stream 28,000+ live channels in HD & 4K. Sky Sports, BT Sport, Movies, Kids & International channels. Works on Firestick, Smart TV, iOS & Android. Start free trial.",
     images: [
@@ -112,7 +112,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${syne.variable} antialiased`}>
       <head>
-        <link rel="alternate" hrefLang="en-gb" href={siteUrl} />
+        {locales.map((l) => (
+          <link
+            key={l}
+            rel="alternate"
+            hrefLang={localeConfig[l].hrefLang}
+            href={`${siteUrl}${localeConfig[l].path}`}
+          />
+        ))}
         <link rel="alternate" hrefLang="x-default" href={siteUrl} />
       </head>
       <body className="min-h-screen flex flex-col noise-bg">{children}</body>

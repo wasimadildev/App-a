@@ -1,21 +1,28 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Globe, Camera, MessageCircle, Send } from "lucide-react";
 
 const footerColumns = [
   {
     heading: "Product",
-    links: ["Features", "Pricing", "Channels", "Devices", "Blog"],
+    links: [
+      { label: "Features", href: "/#features" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "Channels", href: "/channels" },
+      { label: "Setup Guide", href: "/setup-guide" },
+      { label: "Blog", href: "/blog" },
+    ],
   },
   {
     heading: "Support",
     links: [
-      "Setup Guide",
-      "FAQ",
-      "Contact Us",
-      "Live Chat",
-      "Reseller Program",
+      { label: "Free Trial", href: "/free-trial" },
+      { label: "FAQ", href: "/#faq" },
+      { label: "Contact Us", href: "/contact" },
+      { label: "Live Chat", href: "https://wa.me/447380600578" },
+      { label: "Reseller Program", href: "https://wa.me/447380600578" },
     ],
   },
   {
@@ -61,7 +68,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <a href="#" className="flex items-center mb-3">
+            <Link href="/" className="flex items-center mb-3">
               <Image
                 src="/images/Logo.png"
                 alt="IPTV Subscription 4K"
@@ -69,7 +76,7 @@ export default function Footer() {
                 height={36}
                 className="h-8 sm:h-9 w-auto object-contain"
               />
-            </a>
+            </Link>
             <p className="text-sm text-[#94A3B8] mb-5">
               Premium IPTV for the modern viewer.
             </p>
@@ -100,13 +107,24 @@ export default function Footer() {
               {col.content || (
                 <ul className="space-y-2.5">
                   {col.links!.map((link) => (
-                    <li key={link}>
-                      <a
-                        href="#"
-                        className="text-sm text-[#94A3B8] hover:text-white transition-colors"
-                      >
-                        {link}
-                      </a>
+                    <li key={link.label}>
+                      {link.href.startsWith("http") ? (
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-[#94A3B8] hover:text-white transition-colors"
+                        >
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link
+                          href={link.href}
+                          className="text-sm text-[#94A3B8] hover:text-white transition-colors"
+                        >
+                          {link.label}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>

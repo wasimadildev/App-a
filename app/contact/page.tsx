@@ -3,9 +3,12 @@ import Link from "next/link";
 import { MessageCircle, Mail, Phone, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact IPTV Subscription 4K IPTV UK | 24/7 Customer Support",
+  title: "Contact IPTV Subscription 4K UK | 24/7 Customer Support",
   description:
     "Contact the UK's best IPTV provider. WhatsApp 24/7 support, email, and live chat. Get help with setup, billing, or any questions about our IPTV subscription UK service.",
+  alternates: {
+    canonical: "https://iptvsubscription4k.com/contact",
+  },
 };
 
 const contactMethods = [

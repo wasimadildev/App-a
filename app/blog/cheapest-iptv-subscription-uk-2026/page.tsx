@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Cheapest IPTV Subscription UK 2026 — Budget IPTV Plans That Actually Work | IPTV Subscription 4K",
+  title: "Cheapest IPTV Subscription UK 2026 — Budget IPTV Plans That Actually Work",
   description:
     "Find the cheapest IPTV subscription UK families trust in 2026. Budget-friendly plans with real channels, 4K streaming, and reliable uptime from just £15.",
+  alternates: {
+    canonical: "https://iptvsubscription4k.com/blog/cheapest-iptv-subscription-uk-2026",
+  },
   openGraph: {
     title: "Cheapest IPTV Subscription UK 2026 — Budget IPTV Plans That Actually Work",
     description:
@@ -15,6 +19,7 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <article className="pt-24">
+      <BlogJsonLd title={metadata.title} description={metadata.description} datePublished="2026-05-18" slug="cheapest-iptv-subscription-uk-2026" />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="text-sm text-[#475569] mb-8">
           <Link href="/" className="hover:text-white transition-colors">

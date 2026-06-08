@@ -39,10 +39,6 @@ export default function Hero() {
           aria-hidden
         />
       </div>
-      <h1 className="sr-only">
-        Best IPTV Subscription UK — 28,000+ Channels in 4K
-      </h1>
-
       {/* Animated gradient blobs */}
       <motion.div
         variants={blobVariants}
@@ -74,20 +70,19 @@ export default function Hero() {
           <span className="xs:hidden">28,000+ channels</span>
         </motion.a>
 
-        {/* Visible headline — styled as brand message, H1 is sr-only above */}
-        <motion.p
+        {/* Visible headline — H1 with primary keyword */}
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-[2.5rem] leading-[1.05] sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight"
-          aria-hidden="true"
         >
           <span className="text-white">Stream Without</span>
           <br />
           <span className="bg-gradient-to-r from-[#C084FC] via-[#F472B6] to-[#67E8F9] bg-clip-text text-transparent">
             Limits.
           </span>
-        </motion.p>
+        </motion.h1>
 
         {/* Subheadline with keywords */}
         <motion.p
@@ -181,7 +176,7 @@ export default function Hero() {
             width={1729}
             height={910}
             className="w-full h-auto"
-            preload
+            priority
           />
         </motion.div>
       </div>

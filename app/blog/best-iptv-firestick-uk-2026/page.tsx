@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Best IPTV for Firestick UK 2026 — Complete Setup Guide | IPTV Subscription 4K",
+  title: "Best IPTV for Firestick UK 2026 — Complete Setup Guide",
   description:
     "Find the best IPTV for Firestick UK in 2026. Step-by-step guide to install IPTV on your Amazon Firestick, compare providers, and start streaming 28,000+ channels today.",
+  alternates: {
+    canonical: "https://iptvsubscription4k.com/blog/best-iptv-firestick-uk-2026",
+  },
   openGraph: {
     title: "Best IPTV for Firestick UK 2026 — Complete Setup Guide",
     description:
@@ -15,6 +19,7 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <article className="pt-24">
+      <BlogJsonLd title={metadata.title} description={metadata.description} datePublished="2026-05-15" slug="best-iptv-firestick-uk-2026" />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="text-sm text-[#475569] mb-8">
           <Link href="/" className="hover:text-white transition-colors">

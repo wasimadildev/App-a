@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "IPTV on Smart TV UK 2026 — Complete Setup Guide for Samsung, LG & Sony | IPTV Subscription 4K",
+  title: "IPTV on Smart TV UK 2026 — Complete Setup Guide for Samsung, LG & Sony",
   description:
     "Install IPTV on your Smart TV in minutes. Step-by-step guide for Samsung, LG, Sony, and Android TV models. Stream 40,000+ channels in 4K directly on your TV.",
+  alternates: {
+    canonical: "https://iptvsubscription4k.com/blog/iptv-on-smart-tv-uk-2026",
+  },
   openGraph: {
     title: "IPTV on Smart TV UK 2026 — Setup Guide for Samsung, LG & Sony",
     description:
@@ -15,6 +19,7 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <article className="pt-24">
+      <BlogJsonLd title={metadata.title} description={metadata.description} datePublished="2026-05-22" slug="iptv-on-smart-tv-uk-2026" />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="text-sm text-[#475569] mb-8">
           <Link href="/" className="hover:text-white transition-colors">

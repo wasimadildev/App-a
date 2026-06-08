@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title:
-    "How to Watch Sky Sports Without a Subscription UK 2026 | IPTV Subscription 4K",
+    "How to Watch Sky Sports Without a Subscription UK 2026",
   description:
     "Watch Sky Sports cheap UK in 2026 without expensive contracts. IPTV alternatives include Premier League, F1, UFC, and all channels for under £20/month.",
+  alternates: {
+    canonical: "https://iptvsubscription4k.com/blog/watch-sky-sports-without-subscription",
+  },
   openGraph: {
     title: "How to Watch Sky Sports Without a Subscription UK 2026",
     description:
@@ -16,6 +20,7 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <article className="pt-24">
+      <BlogJsonLd title={metadata.title} description={metadata.description} datePublished="2026-05-05" slug="watch-sky-sports-without-subscription" />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="text-sm text-[#475569] mb-8">
           <Link href="/" className="hover:text-white transition-colors">

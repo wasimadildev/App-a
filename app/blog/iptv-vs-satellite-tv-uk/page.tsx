@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "IPTV vs Satellite TV UK 2026 — Which Is Better? | IPTV Subscription 4K",
+  title: "IPTV vs Satellite TV UK 2026 — Which Is Better?",
   description:
     "IPTV vs Sky TV UK comparison for 2026. Compare costs, channels, stream quality, and flexibility. See why thousands of UK homes are switching from satellite to IPTV.",
+  alternates: {
+    canonical: "https://iptvsubscription4k.com/blog/iptv-vs-satellite-tv-uk",
+  },
   openGraph: {
     title: "IPTV vs Satellite TV UK 2026 — Which Is Better?",
     description:
@@ -15,6 +19,7 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <article className="pt-24">
+      <BlogJsonLd title={metadata.title} description={metadata.description} datePublished="2026-05-10" slug="iptv-vs-satellite-tv-uk" />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="text-sm text-[#475569] mb-8">
           <Link href="/" className="hover:text-white transition-colors">

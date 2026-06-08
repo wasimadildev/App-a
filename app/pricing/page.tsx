@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "IPTV Plans & Pricing UK 2026 | Starting from £15",
   description:
     "Choose from IPTV Subscription 4K plans: Basic £15/mo, Standard £35/6mo, Premium £49/yr. 40,000+ channels, 4K quality, VOD library.",
+  alternates: {
+    canonical: "https://iptvsubscription4k.com/pricing",
+  },
   openGraph: {
     title: "IPTV Plans & Pricing UK 2026 | IPTV Subscription 4K",
     description:
@@ -25,7 +28,12 @@ export default function PricingPage() {
           <span className="text-[#94A3B8]">IPTV Pricing</span>
         </nav>
       </div>
-      <Pricing />
+      <section aria-labelledby="pricing-heading">
+        <h1 id="pricing-heading" className="sr-only">
+          IPTV Plans & Pricing UK 2026 — Starting from £15/month
+        </h1>
+        <Pricing />
+      </section>
     </main>
   );
 }
