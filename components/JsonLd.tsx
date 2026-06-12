@@ -60,6 +60,31 @@ const product = {
       priceValidUntil: "2027-12-31",
       availability: "https://schema.org/InStock",
       url: `${siteUrl}/#pricing`,
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: {
+          "@type": "MonetaryAmount",
+          value: "0",
+          currency: "GBP",
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: "0",
+            maxValue: "0",
+            unitCode: "DAY",
+          },
+        },
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        returnPolicyCategory:
+          "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 7,
+        returnMethod: "https://schema.org/ReturnByMail",
+        returnShippingFees: "https://schema.org/FreeReturn",
+      },
     },
     {
       "@type": "Offer",
@@ -69,6 +94,31 @@ const product = {
       priceValidUntil: "2027-12-31",
       availability: "https://schema.org/InStock",
       url: `${siteUrl}/#pricing`,
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: {
+          "@type": "MonetaryAmount",
+          value: "0",
+          currency: "GBP",
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: "0",
+            maxValue: "0",
+            unitCode: "DAY",
+          },
+        },
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        returnPolicyCategory:
+          "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 7,
+        returnMethod: "https://schema.org/ReturnByMail",
+        returnShippingFees: "https://schema.org/FreeReturn",
+      },
     },
     {
       "@type": "Offer",
@@ -78,6 +128,31 @@ const product = {
       priceValidUntil: "2027-12-31",
       availability: "https://schema.org/InStock",
       url: `${siteUrl}/#pricing`,
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: {
+          "@type": "MonetaryAmount",
+          value: "0",
+          currency: "GBP",
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: "0",
+            maxValue: "0",
+            unitCode: "DAY",
+          },
+        },
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        returnPolicyCategory:
+          "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 7,
+        returnMethod: "https://schema.org/ReturnByMail",
+        returnShippingFees: "https://schema.org/FreeReturn",
+      },
     },
   ],
   aggregateRating: {
