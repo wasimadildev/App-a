@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Choose from IPTV Subscription 4K plans: Basic £15/mo, Standard £35/6mo, Premium £49/yr. 40,000+ channels, 4K quality, VOD library.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/pricing",
+    canonical: "https://www.iptvsubscription4k.com/pricing",
   },
   openGraph: {
     title: "IPTV Plans & Pricing UK 2026 | IPTV Subscription 4K",

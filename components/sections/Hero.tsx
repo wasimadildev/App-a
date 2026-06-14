@@ -139,7 +139,7 @@ export default function Hero() {
               "mohammed-ali-iptv",
               "claire-buchanan-iptv",
               "ryan-obrien-iptv",
-            ].map((seed, i) => (
+            ].map((seed) => (
               <Image
                 key={seed}
                 src={`https://i.pravatar.cc/150?u=${seed}`}

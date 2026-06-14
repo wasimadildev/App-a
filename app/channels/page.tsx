@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Full IPTV channel list for UK subscribers. Sky Sports, BT Sport, BBC, ITV, Channel 4, international channels & more. 28,000+ channels available on all plans.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/channels",
+    canonical: "https://www.iptvsubscription4k.com/channels",
   },
 };
 

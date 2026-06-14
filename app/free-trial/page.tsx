@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Start your free IPTV trial UK with IPTV Subscription 4K. Enjoy 28,000+ live channels including Sky Sports and 4K content for 24 hours. No credit card needed. Setup in 2 minutes.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/free-trial",
+    canonical: "https://www.iptvsubscription4k.com/free-trial",
   },
   openGraph: {
     title: "Free IPTV Trial UK | IPTV Subscription 4K",

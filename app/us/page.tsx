@@ -16,7 +16,7 @@ const Testimonials = dynamic(() => import("@/components/sections/Testimonials"),
 const FAQ = dynamic(() => import("@/components/sections/FAQ"), { ssr: false });
 const CTA = dynamic(() => import("@/components/sections/CTA"), { ssr: false });
 
-import { heroContent, siteName } from "@/lib/content";
+import { heroContent } from "@/lib/content";
 
 export default function USHome() {
   return (

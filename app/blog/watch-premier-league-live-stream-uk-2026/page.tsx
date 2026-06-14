@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Watch every Premier League match live in the UK without an expensive Sky or BT Sport subscription. Complete IPTV streaming guide for the 2026/27 season in 4K.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/blog/watch-premier-league-live-stream-uk-2026",
+    canonical: "https://www.iptvsubscription4k.com/blog/watch-premier-league-live-stream-uk-2026",
   },
   openGraph: {
     title: "How to Watch Premier League Live Stream UK 2026 — Without Sky or BT Sport",

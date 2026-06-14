@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Compare the best IPTV service provider UK has to offer in 2026. Premium IPTV subscriptions reviewed for channel count, 4K quality, pricing, and reliability.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/blog/best-iptv-service-provider-uk-2026",
+    canonical: "https://www.iptvsubscription4k.com/blog/best-iptv-service-provider-uk-2026",
   },
   openGraph: {
     title: "Best IPTV Service Provider UK 2026 — Top Premium IPTV Subscriptions Compared",
