@@ -1,4 +1,4 @@
-const siteUrl = "https://iptvsubscription4k.com";
+import { siteUrl } from "@/lib/locales";
 
 const organization = {
   "@context": "https://schema.org",
@@ -62,6 +62,10 @@ const product = {
       url: `${siteUrl}/#pricing`,
       shippingDetails: {
         "@type": "OfferShippingDetails",
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "GB",
+        },
         shippingRate: {
           "@type": "MonetaryAmount",
           value: "0",
@@ -75,14 +79,22 @@ const product = {
             maxValue: "0",
             unitCode: "DAY",
           },
+          transitTime: {
+            "@type": "QuantitativeValue",
+            minValue: "0",
+            maxValue: "1",
+            unitCode: "DAY",
+          },
         },
       },
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",
+        applicableCountry: "GB",
         returnPolicyCategory:
           "https://schema.org/MerchantReturnFiniteReturnWindow",
         merchantReturnDays: 7,
         returnMethod: "https://schema.org/ReturnByMail",
+        returnFees: "https://schema.org/FreeReturn",
         returnShippingFees: "https://schema.org/FreeReturn",
       },
     },
@@ -96,6 +108,10 @@ const product = {
       url: `${siteUrl}/#pricing`,
       shippingDetails: {
         "@type": "OfferShippingDetails",
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "GB",
+        },
         shippingRate: {
           "@type": "MonetaryAmount",
           value: "0",
@@ -109,14 +125,22 @@ const product = {
             maxValue: "0",
             unitCode: "DAY",
           },
+          transitTime: {
+            "@type": "QuantitativeValue",
+            minValue: "0",
+            maxValue: "1",
+            unitCode: "DAY",
+          },
         },
       },
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",
+        applicableCountry: "GB",
         returnPolicyCategory:
           "https://schema.org/MerchantReturnFiniteReturnWindow",
         merchantReturnDays: 7,
         returnMethod: "https://schema.org/ReturnByMail",
+        returnFees: "https://schema.org/FreeReturn",
         returnShippingFees: "https://schema.org/FreeReturn",
       },
     },
@@ -130,6 +154,10 @@ const product = {
       url: `${siteUrl}/#pricing`,
       shippingDetails: {
         "@type": "OfferShippingDetails",
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "GB",
+        },
         shippingRate: {
           "@type": "MonetaryAmount",
           value: "0",
@@ -143,14 +171,22 @@ const product = {
             maxValue: "0",
             unitCode: "DAY",
           },
+          transitTime: {
+            "@type": "QuantitativeValue",
+            minValue: "0",
+            maxValue: "1",
+            unitCode: "DAY",
+          },
         },
       },
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",
+        applicableCountry: "GB",
         returnPolicyCategory:
           "https://schema.org/MerchantReturnFiniteReturnWindow",
         merchantReturnDays: 7,
         returnMethod: "https://schema.org/ReturnByMail",
+        returnFees: "https://schema.org/FreeReturn",
         returnShippingFees: "https://schema.org/FreeReturn",
       },
     },

@@ -19,7 +19,7 @@ function getLocale(request: NextRequest): string {
 
     for (const lang of preferred) {
       if (lang.startsWith("nl")) return "nl";
-      if (lang === "en-us" || lang === "en-us") return "us";
+      if (lang === "en-us" || lang.startsWith("en-us")) return "us";
       if (lang === "en-gb" || lang.startsWith("en-gb")) return "uk";
       if (lang.startsWith("en")) return "uk";
     }
@@ -52,11 +52,16 @@ export function middleware(request: NextRequest) {
     return;
   }
 
+  if (pathname !== "/") {
+    return NextResponse.next();
+  }
+
   const locale = getLocale(request);
 
   // If the user prefers a non-UK locale, redirect
   if (locale !== "uk") {
-    const url = new URL(`/${locale}${pathname}`, request.url);
+    const targetPath = pathname === "/" ? `/${locale}` : `/${locale}${pathname}`;
+    const url = new URL(targetPath, request.url);
     url.search = request.nextUrl.search;
     const response = NextResponse.redirect(url);
     response.cookies.set(COOKIE_NAME, locale, {

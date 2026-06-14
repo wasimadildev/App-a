@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Watch Sky Sports cheap UK in 2026 without expensive contracts. IPTV alternatives include Premier League, F1, UFC, and all channels for under £20/month.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/blog/watch-sky-sports-without-subscription",
+    canonical: "https://www.iptvsubscription4k.com/blog/watch-sky-sports-without-subscription",
   },
   openGraph: {
     title: "How to Watch Sky Sports Without a Subscription UK 2026",

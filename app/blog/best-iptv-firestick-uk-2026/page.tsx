@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Find the best IPTV for Firestick UK in 2026. Step-by-step guide to install IPTV on your Amazon Firestick, compare providers, and start streaming 28,000+ channels today.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/blog/best-iptv-firestick-uk-2026",
+    canonical: "https://www.iptvsubscription4k.com/blog/best-iptv-firestick-uk-2026",
   },
   openGraph: {
     title: "Best IPTV for Firestick UK 2026 — Complete Setup Guide",

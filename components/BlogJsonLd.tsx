@@ -1,11 +1,11 @@
+import { siteUrl } from "@/lib/locales";
+
 interface BlogJsonLdProps {
   title: unknown;
   description: unknown;
   datePublished: string;
   slug: string;
 }
-
-const siteUrl = "https://iptvsubscription4k.com";
 
 export default function BlogJsonLd({
   title,

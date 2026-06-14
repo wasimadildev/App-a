@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Install IPTV on your Smart TV in minutes. Step-by-step guide for Samsung, LG, Sony, and Android TV models. Stream 40,000+ channels in 4K directly on your TV.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/blog/iptv-on-smart-tv-uk-2026",
+    canonical: "https://www.iptvsubscription4k.com/blog/iptv-on-smart-tv-uk-2026",
   },
   openGraph: {
     title: "IPTV on Smart TV UK 2026 — Setup Guide for Samsung, LG & Sony",

@@ -52,10 +52,12 @@ export const localeConfig: Record<
   },
 };
 
-export const siteUrl = "https://iptvsubscription4k.com";
+export const siteUrl = "https://www.iptvsubscription4k.com";
 
 export function localizedUrl(locale: Locale, path: string = "/") {
   const prefix = localeConfig[locale].path;
-  if (prefix === "/") return `${siteUrl}${path}`;
-  return `${siteUrl}${prefix}${path}`;
+  const normalizedPath = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
+
+  if (prefix === "/") return `${siteUrl}${normalizedPath}`;
+  return `${siteUrl}${prefix}${normalizedPath}`;
 }

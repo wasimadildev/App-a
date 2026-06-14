@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Complete IPTV setup guide for UK users. Learn how to install IPTV on Amazon Firestick, Smart TV, Android, iOS and more with IPTV Subscription 4K. Setup in 2 minutes.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/setup-guide",
+    canonical: "https://www.iptvsubscription4k.com/setup-guide",
   },
 };
 

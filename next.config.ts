@@ -43,21 +43,6 @@ const nextConfig: NextConfig = {
         destination: "/:path*",
         permanent: true,
       },
-      {
-        source: "/nl",
-        destination: "/nl/",
-        permanent: true,
-      },
-      {
-        source: "/us",
-        destination: "/us/",
-        permanent: true,
-      },
-      {
-        source: "/eu",
-        destination: "/eu/",
-        permanent: true,
-      },
     ];
   },
 };

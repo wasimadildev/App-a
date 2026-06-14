@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Find the cheapest IPTV subscription UK families trust in 2026. Budget-friendly plans with real channels, 4K streaming, and reliable uptime from just £15.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/blog/cheapest-iptv-subscription-uk-2026",
+    canonical: "https://www.iptvsubscription4k.com/blog/cheapest-iptv-subscription-uk-2026",
   },
   openGraph: {
     title: "Cheapest IPTV Subscription UK 2026 — Budget IPTV Plans That Actually Work",

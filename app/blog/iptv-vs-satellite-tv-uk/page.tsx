@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "IPTV vs Sky TV UK comparison for 2026. Compare costs, channels, stream quality, and flexibility. See why thousands of UK homes are switching from satellite to IPTV.",
   alternates: {
-    canonical: "https://iptvsubscription4k.com/blog/iptv-vs-satellite-tv-uk",
+    canonical: "https://www.iptvsubscription4k.com/blog/iptv-vs-satellite-tv-uk",
   },
   openGraph: {
     title: "IPTV vs Satellite TV UK 2026 — Which Is Better?",
